@@ -81,7 +81,7 @@ msg "Building mpv"
 	[ ! -f deps/mpv/_build/config.h ] && cat deps/mpv/_build/meson-logs/meson-log.txt
 	exit 1
 }
-
+./buildall.sh -n --arch arm64 mpv
 msg "Building mpv-android"
 ./buildall.sh -n
 
